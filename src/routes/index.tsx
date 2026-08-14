@@ -232,10 +232,10 @@ function Index() {
                 <Phone className="size-6 text-gold" />
                 <h3 className="mt-4 font-semibold text-primary-foreground">Call Us</h3>
                 <a
-                  href="tel:+2348109236423"
+                  href="tel:+2347064591361"
                   className="mt-2 block text-sm text-primary-foreground/70 hover:text-gold"
                 >
-                  +234 810 923 6423
+                  +234 706 459 1361
                 </a>
               </div>
               <div>
