@@ -86,9 +86,9 @@ function Index() {
             href="#home"
             className="rounded-md bg-background px-4 py-2 text-lg font-extrabold tracking-tight text-ink"
           >
-            Tetra
+            Golden Vee
             <span className="ml-1 block text-[9px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              Trade Limited
+              Integrated
             </span>
           </a>
           <nav className="hidden items-center gap-7 text-sm font-medium text-primary-foreground lg:flex">
