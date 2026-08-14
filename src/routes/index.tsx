@@ -226,7 +226,7 @@ function Index() {
               <div>
                 <MapPin className="size-6 text-gold" />
                 <h3 className="mt-4 font-semibold text-primary-foreground">Meet Us</h3>
-                <p className="mt-2 text-sm text-primary-foreground/70">Abuja, Nigeria</p>
+                <p className="mt-2 text-sm text-primary-foreground/70">Port Harcourt, Nigeria</p>
               </div>
               <div>
                 <Phone className="size-6 text-gold" />
