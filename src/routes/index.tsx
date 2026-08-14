@@ -9,13 +9,13 @@ import serviceSupply from "@/assets/service-supply.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Tetra Trade Limited | Reliable Cement Distribution" },
+      { title: "Golden Vee Integrated | Reliable Cement Distribution" },
       {
         name: "description",
         content:
           "Efficient, cost-effective cement distribution and delivery logistics for construction companies, wholesalers and retailers across Nigeria.",
       },
-      { property: "og:title", content: "Tetra Trade Limited | Reliable Cement Distribution" },
+      { property: "og:title", content: "Golden Vee Integrated | Reliable Cement Distribution" },
       {
         property: "og:description",
         content:
@@ -139,11 +139,11 @@ function Index() {
             <div className="bg-gold p-10 md:p-14">
               <p className="text-lg text-primary-foreground/70">Build Your Dream</p>
               <h2 className="mt-3 text-3xl font-extrabold leading-tight text-primary-foreground md:text-4xl">
-                Why Choose Tetra Trade Limited?
+                Why Choose Golden Vee Integrated?
               </h2>
               <p className="mt-6 text-sm leading-relaxed text-primary-foreground/90">
                 With reliable logistics, competitive pricing, and a proven track record of{" "}
-                <strong>99% on-time deliveries</strong>, Tetra Trade Limited ensures seamless
+                <strong>99% on-time deliveries</strong>, Golden Vee Integrated ensures seamless
                 cement distribution, supporting over <strong>500 clients nationwide</strong> and
                 delivering <strong>300,000+ metric tons annually</strong> to fuel Nigeria's growth.
               </p>
@@ -167,7 +167,7 @@ function Index() {
 
         <section id="services" className="bg-muted py-20">
           <div className="mx-auto max-w-6xl px-5">
-            <p className="text-sm text-muted-foreground">Tetra Trade Limited Services</p>
+            <p className="text-sm text-muted-foreground">Golden Vee Integrated Services</p>
             <div className="mt-2 flex flex-wrap items-center justify-between gap-6">
               <h2 className="text-3xl font-extrabold text-ink md:text-4xl">Our Key Offerings</h2>
               <a
@@ -255,7 +255,7 @@ function Index() {
 
       <footer className="bg-gold py-6">
         <p className="mx-auto max-w-6xl px-5 text-xs text-primary-foreground/80">
-          &copy; {new Date().getFullYear()} Tetra Trade Limited. All rights reserved.
+          &copy; {new Date().getFullYear()} Golden Vee Integrated. All rights reserved.
         </p>
       </footer>
     </div>
