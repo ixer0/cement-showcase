@@ -242,10 +242,10 @@ function Index() {
                 <Mail className="size-6 text-gold" />
                 <h3 className="mt-4 font-semibold text-primary-foreground">Email Us</h3>
                 <a
-                  href="mailto:info@tetratradelimited.com"
+                  href="mailto:info@goldenveeintegrated.com"
                   className="mt-2 block text-sm text-primary-foreground/70 hover:text-gold"
                 >
-                  info@tetratradelimited.com
+                  info@goldenveeintegrated.com
                 </a>
               </div>
             </div>
