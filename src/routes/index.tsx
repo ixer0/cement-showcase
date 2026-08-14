@@ -59,7 +59,7 @@ const services = [
 const testimonials = [
   {
     quote:
-      "Tetra Trade has simplified our procurement process. Reliable, consistent, and professional.",
+      "Golden Vee has simplified our procurement process. Reliable, consistent, and professional.",
     name: "Engr. Adewale",
     role: "Lagos Construction Ltd.",
   },
