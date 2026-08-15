@@ -29,10 +29,10 @@ export const Route = createFileRoute("/")({
 });
 
 const stats = [
-  { value: "500+", label: "Construction Companies" },
-  { value: "160+", label: "Trucks Delivered Monthly" },
-  { value: "300K", label: "Metric Tons Distributed Annually" },
-  { value: "99%", label: "On-Time Delivery Rate" },
+  { value: "50+", label: "Construction Companies" },
+  { value: "40", label: "Trucks Delivered Monthly" },
+  { value: "20,000", label: "Metric Tons Distributed Annually" },
+  { value: "99.9%", label: "On-Time Delivery Rate" },
 ];
 
 const services = [
