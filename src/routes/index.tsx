@@ -142,10 +142,11 @@ function Index() {
                 Why Choose Golden Vee Integrated?
               </h2>
               <p className="mt-6 text-sm leading-relaxed text-primary-foreground/90">
-                With reliable logistics, competitive pricing, and a proven track record of{" "}
-                <strong>99% on-time deliveries</strong>, Golden Vee Integrated ensures seamless
-                cement distribution, supporting over <strong>500 clients nationwide</strong> and
-                delivering <strong>300,000+ metric tons annually</strong> to fuel Nigeria's growth.
+                With a strong reputation for dependable logistics, competitive rates, and a{" "}
+                <strong>99.9% on-time delivery record</strong>, Golden Vee Integrated provides efficient
+                cement distribution services. The company serves more than{" "}
+                <strong>350 clients across Nigeria</strong> and supplies over{" "}
+                <strong>20,000 metric tons of cement each year</strong>, contributing to the nation’s continued development.
               </p>
               <a
                 href="#contact"
