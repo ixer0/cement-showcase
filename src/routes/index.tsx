@@ -60,13 +60,13 @@ const testimonials = [
   {
     quote:
       "Working with Golden Vee has made our procurement much easier. Their service is dependable, consistent, and highly professional.",
-    name: "Engr. Adewale",
-    role: "Lagos Construction Ltd.",
+    name: "Engr. Briggs",
+    role: "Port Harcourt Construction Ltd.",
   },
   {
-    quote: "They've never missed a delivery deadline, no matter the location.",
-    name: "Fatima S.",
-    role: "Real Estate Developer",
+    quote: "They consistently deliver on schedule, regardless of where the order needs to go.",
+    name: "Mrs. Faith",
+    role: "Cement Retail Shop Owner",
   },
 ];
 
