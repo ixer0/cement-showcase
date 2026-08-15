@@ -119,11 +119,11 @@ function Index() {
           <div className="absolute inset-0 -z-10 bg-ink/70" />
           <div className="mx-auto max-w-6xl px-5 py-28 md:py-40">
             <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-tight text-primary-foreground md:text-6xl">
-              Building Nigeria's Future with Reliable Cement Distribution
+              Strengthening Nigeria’s Growth Through Dependable Cement Supply
             </h1>
             <p className="mt-6 max-w-xl text-base text-primary-foreground/80">
-              Efficient, cost-effective, and trusted cement logistics tailored for your
-              construction needs.
+              Reliable, affordable, and efficient cement distribution solutions designed to meet
+              the demands of your construction projects.
             </p>
             <a
               href="#services"
