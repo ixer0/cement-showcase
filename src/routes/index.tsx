@@ -59,7 +59,7 @@ const services = [
 const testimonials = [
   {
     quote:
-      "Golden Vee has simplified our procurement process. Reliable, consistent, and professional.",
+      "Working with Golden Vee has made our procurement much easier. Their service is dependable, consistent, and highly professional.",
     name: "Engr. Adewale",
     role: "Lagos Construction Ltd.",
   },
@@ -201,7 +201,7 @@ function Index() {
 
         <section className="mx-auto max-w-6xl px-5 py-20">
           <h2 className="text-center text-3xl font-extrabold text-ink md:text-4xl">
-            What Our Clients Say
+            Here's What Our Customers Say
           </h2>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             {testimonials.map((t) => (
