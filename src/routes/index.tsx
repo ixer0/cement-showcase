@@ -80,7 +80,7 @@ const navLinks = [
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-50 bg-gold">
+      <header className="sticky top-0 z-50 bg-sky">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
           <a
             href="#home"
@@ -127,7 +127,7 @@ function Index() {
             </p>
             <a
               href="#services"
-              className="mt-12 inline-flex rounded-md bg-gold px-8 py-4 text-sm font-semibold uppercase tracking-wide text-primary-foreground transition-transform active:scale-[0.98]"
+              className="mt-12 inline-flex rounded-md bg-sky px-8 py-4 text-sm font-semibold uppercase tracking-wide text-primary-foreground transition-transform active:scale-[0.98]"
             >
               Our Services
             </a>
@@ -136,7 +136,7 @@ function Index() {
 
         <section id="about" className="mx-auto max-w-6xl px-5 py-20">
           <div className="grid items-stretch gap-0 md:grid-cols-2">
-            <div className="bg-gold p-10 md:p-14">
+            <div className="bg-sky p-10 md:p-14">
               <p className="text-lg text-primary-foreground/70">Build Your Dream</p>
               <h2 className="mt-3 text-3xl font-extrabold leading-tight text-primary-foreground md:text-4xl">
                 Why Choose Golden Vee Integrated?
@@ -150,7 +150,7 @@ function Index() {
               </p>
               <a
                 href="#contact"
-                className="mt-10 inline-flex items-center gap-2 rounded-md bg-background px-8 py-4 text-sm font-semibold uppercase tracking-wide text-gold"
+                className="mt-10 inline-flex items-center gap-2 rounded-md bg-background px-8 py-4 text-sm font-semibold uppercase tracking-wide text-sky"
               >
                 Work With Us <BadgeCheck className="size-4" />
               </a>
@@ -173,7 +173,7 @@ function Index() {
               <h2 className="text-3xl font-extrabold text-ink md:text-4xl">Our Key Offerings</h2>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-md bg-gold px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-primary-foreground"
+                className="inline-flex items-center gap-2 rounded-md bg-sky px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-primary-foreground"
               >
                 Work With Us <ArrowRight className="size-4" />
               </a>
@@ -210,7 +210,7 @@ function Index() {
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
                 <figcaption className="mt-6">
-                  <span className="block font-semibold text-gold">{t.name}</span>
+                  <span className="block font-semibold text-sky">{t.name}</span>
                   <span className="text-sm text-muted-foreground">{t.role}</span>
                 </figcaption>
               </figure>
@@ -225,26 +225,26 @@ function Index() {
             </h2>
             <div className="mt-12 grid gap-10 md:grid-cols-3">
               <div>
-                <MapPin className="size-6 text-gold" />
+                <MapPin className="size-6 text-sky" />
                 <h3 className="mt-4 font-semibold text-primary-foreground">Meet Us</h3>
                 <p className="mt-2 text-sm text-primary-foreground/70">Port Harcourt, Nigeria</p>
               </div>
               <div>
-                <Phone className="size-6 text-gold" />
+                <Phone className="size-6 text-sky" />
                 <h3 className="mt-4 font-semibold text-primary-foreground">Call Us</h3>
                 <a
                   href="tel:+2347064591361"
-                  className="mt-2 block text-sm text-primary-foreground/70 hover:text-gold"
+                  className="mt-2 block text-sm text-primary-foreground/70 hover:text-sky"
                 >
                   +234 706 459 1361
                 </a>
               </div>
               <div>
-                <Mail className="size-6 text-gold" />
+                <Mail className="size-6 text-sky" />
                 <h3 className="mt-4 font-semibold text-primary-foreground">Email Us</h3>
                 <a
                   href="mailto:chinule13@gmail.com"
-                  className="mt-2 block text-sm text-primary-foreground/70 hover:text-gold"
+                  className="mt-2 block text-sm text-primary-foreground/70 hover:text-sky"
                 >
                   chinule13@gmail.com
                 </a>
@@ -254,7 +254,7 @@ function Index() {
         </section>
       </main>
 
-      <footer className="bg-gold py-6">
+      <footer className="bg-sky py-6">
         <p className="mx-auto max-w-6xl px-5 text-xs text-primary-foreground/80">
           &copy; {new Date().getFullYear()} Golden Vee Integrated. All rights reserved.
         </p>
