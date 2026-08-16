@@ -1,7 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, BadgeCheck, Mail, MapPin, Phone } from "lucide-react";
+import { useEffect, useState } from "react";
 
 import heroSite from "@/assets/hero-site.jpg";
+import heroCementBagsAsset from "@/assets/hero-cement-bags.jpg.asset.json";
+import heroScaffoldAsset from "@/assets/hero-scaffold.jpg.asset.json";
 import serviceBulkAsset from "@/assets/service-bulk.jpg.asset.json";
 import serviceLogisticsAsset from "@/assets/service-logistics.jpg.asset.json";
 import serviceSupplyAsset from "@/assets/service-supply.jpg.asset.json";
@@ -9,6 +12,25 @@ import serviceSupplyAsset from "@/assets/service-supply.jpg.asset.json";
 const serviceBulk = serviceBulkAsset.url;
 const serviceLogistics = serviceLogisticsAsset.url;
 const serviceSupply = serviceSupplyAsset.url;
+
+const heroSlides = [
+  {
+    src: heroSite,
+    alt: "Aerial view of a large construction site with workers laying reinforced foundations",
+  },
+  {
+    src: heroCementBagsAsset.url,
+    alt: "Stacked cement bags surrounded by grey cement dust at a supply yard",
+  },
+  {
+    src: serviceSupplyAsset.url,
+    alt: "Construction workers assembling reinforcement steel at a bridge project site",
+  },
+  {
+    src: heroScaffoldAsset.url,
+    alt: "Workers on scaffolding at a large reinforced concrete building under construction",
+  },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
