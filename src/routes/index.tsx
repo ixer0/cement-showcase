@@ -42,19 +42,19 @@ const stats = [
 const services = [
   {
     image: serviceBulk,
-    alt: "Stacked cement bags on a wooden pallet inside a distribution warehouse",
+    alt: "Pallets of cement bags stacked in a warehouse with a supervisor in safety gear",
     title: "Bulk Cement Distribution",
     text: "Supplying premium cement in bulk volumes to sites nationwide.",
   },
   {
     image: serviceLogistics,
-    alt: "Convoy of haulage trucks travelling along a highway at golden hour",
+    alt: "Loaded haulage trailer with covered cargo parked along a highway",
     title: "Delivery Logistics",
     text: "Ensuring timely and efficient delivery to your site, every time.",
   },
   {
     image: serviceSupply,
-    alt: "Aerial view of shipping containers stacked at a port terminal",
+    alt: "Construction workers assembling reinforcement steel at a bridge project site",
     title: "Supply Chain Management",
     text: "Tailored procurement solutions for wholesalers and retailers.",
   },
