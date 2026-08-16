@@ -1,7 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, BadgeCheck, Mail, MapPin, Phone } from "lucide-react";
+import { useEffect, useState } from "react";
 
 import heroSite from "@/assets/hero-site.jpg";
+import heroCementBagsAsset from "@/assets/hero-cement-bags.jpg.asset.json";
+import heroScaffoldAsset from "@/assets/hero-scaffold.jpg.asset.json";
 import serviceBulkAsset from "@/assets/service-bulk.jpg.asset.json";
 import serviceLogisticsAsset from "@/assets/service-logistics.jpg.asset.json";
 import serviceSupplyAsset from "@/assets/service-supply.jpg.asset.json";
@@ -9,6 +12,25 @@ import serviceSupplyAsset from "@/assets/service-supply.jpg.asset.json";
 const serviceBulk = serviceBulkAsset.url;
 const serviceLogistics = serviceLogisticsAsset.url;
 const serviceSupply = serviceSupplyAsset.url;
+
+const heroSlides = [
+  {
+    src: heroSite,
+    alt: "Aerial view of a large construction site with workers laying reinforced foundations",
+  },
+  {
+    src: heroCementBagsAsset.url,
+    alt: "Stacked cement bags surrounded by grey cement dust at a supply yard",
+  },
+  {
+    src: serviceSupplyAsset.url,
+    alt: "Construction workers assembling reinforcement steel at a bridge project site",
+  },
+  {
+    src: heroScaffoldAsset.url,
+    alt: "Workers on scaffolding at a large reinforced concrete building under construction",
+  },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -82,6 +104,13 @@ const navLinks = [
 ];
 
 function Index() {
+  const [slide, setSlide] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => setSlide((i) => (i + 1) % heroSlides.length), 3000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 bg-sky">
@@ -113,13 +142,20 @@ function Index() {
 
       <main>
         <section id="home" className="relative isolate overflow-hidden">
-          <img
-            src={heroSite}
-            alt="Aerial view of a large construction site with workers laying reinforced foundations"
-            width={1920}
-            height={1080}
-            className="absolute inset-0 -z-10 size-full object-cover"
-          />
+          {heroSlides.map((s, i) => (
+            <img
+              key={s.src}
+              src={s.src}
+              alt={s.alt}
+              width={1920}
+              height={1080}
+              loading={i === 0 ? "eager" : "lazy"}
+              aria-hidden={i !== slide}
+              className={`absolute inset-0 -z-10 size-full object-cover transition-opacity duration-1000 ${
+                i === slide ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
           <div className="absolute inset-0 -z-10 bg-ink/70" />
           <div className="mx-auto max-w-6xl px-5 py-28 md:py-40">
             <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-tight text-primary-foreground md:text-6xl">
