@@ -117,7 +117,7 @@ function Index() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
           <a
             href="#home"
-            className="rounded-md bg-background px-4 py-2 text-lg font-extrabold tracking-tight text-ink"
+            className="rounded-md bg-background px-4 py-2 text-lg font-extrabold tracking-tight text-foreground"
           >
             Golden Vee
             <span className="ml-1 block text-[9px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
@@ -133,7 +133,7 @@ function Index() {
           </nav>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-md bg-background px-4 py-2 text-xs font-bold uppercase tracking-wide text-ink transition-transform active:scale-[0.98]"
+            className="inline-flex items-center gap-2 rounded-md bg-background px-4 py-2 text-xs font-bold uppercase tracking-wide text-foreground transition-transform active:scale-[0.98]"
           >
             Reach Us <ArrowRight className="size-4" />
           </a>
