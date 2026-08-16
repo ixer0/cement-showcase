@@ -142,13 +142,20 @@ function Index() {
 
       <main>
         <section id="home" className="relative isolate overflow-hidden">
-          <img
-            src={heroSite}
-            alt="Aerial view of a large construction site with workers laying reinforced foundations"
-            width={1920}
-            height={1080}
-            className="absolute inset-0 -z-10 size-full object-cover"
-          />
+          {heroSlides.map((s, i) => (
+            <img
+              key={s.src}
+              src={s.src}
+              alt={s.alt}
+              width={1920}
+              height={1080}
+              loading={i === 0 ? "eager" : "lazy"}
+              aria-hidden={i !== slide}
+              className={`absolute inset-0 -z-10 size-full object-cover transition-opacity duration-1000 ${
+                i === slide ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
           <div className="absolute inset-0 -z-10 bg-ink/70" />
           <div className="mx-auto max-w-6xl px-5 py-28 md:py-40">
             <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-tight text-primary-foreground md:text-6xl">
