@@ -104,6 +104,13 @@ const navLinks = [
 ];
 
 function Index() {
+  const [slide, setSlide] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => setSlide((i) => (i + 1) % heroSlides.length), 3000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 bg-sky">
