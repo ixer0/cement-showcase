@@ -2,9 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, BadgeCheck, Mail, MapPin, Phone } from "lucide-react";
 
 import heroSite from "@/assets/hero-site.jpg";
-import serviceBulk from "@/assets/service-bulk.jpg";
-import serviceLogistics from "@/assets/service-logistics.jpg";
-import serviceSupply from "@/assets/service-supply.jpg";
+import serviceBulkAsset from "@/assets/service-bulk.jpg.asset.json";
+import serviceLogisticsAsset from "@/assets/service-logistics.jpg.asset.json";
+import serviceSupplyAsset from "@/assets/service-supply.jpg.asset.json";
+
+const serviceBulk = serviceBulkAsset.url;
+const serviceLogistics = serviceLogisticsAsset.url;
+const serviceSupply = serviceSupplyAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
