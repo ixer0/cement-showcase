@@ -2,9 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, BadgeCheck, Mail, MapPin, Phone } from "lucide-react";
 
 import heroSite from "@/assets/hero-site.jpg";
-import serviceBulk from "@/assets/service-bulk.jpg";
-import serviceLogistics from "@/assets/service-logistics.jpg";
-import serviceSupply from "@/assets/service-supply.jpg";
+import serviceBulkAsset from "@/assets/service-bulk.jpg.asset.json";
+import serviceLogisticsAsset from "@/assets/service-logistics.jpg.asset.json";
+import serviceSupplyAsset from "@/assets/service-supply.jpg.asset.json";
+
+const serviceBulk = serviceBulkAsset.url;
+const serviceLogistics = serviceLogisticsAsset.url;
+const serviceSupply = serviceSupplyAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,19 +42,19 @@ const stats = [
 const services = [
   {
     image: serviceBulk,
-    alt: "Stacked cement bags on a wooden pallet inside a distribution warehouse",
+    alt: "Pallets of cement bags stacked in a warehouse with a supervisor in safety gear",
     title: "Bulk Cement Distribution",
     text: "Supplying premium cement in bulk volumes to sites nationwide.",
   },
   {
     image: serviceLogistics,
-    alt: "Convoy of haulage trucks travelling along a highway at golden hour",
+    alt: "Loaded haulage trailer with covered cargo parked along a highway",
     title: "Delivery Logistics",
     text: "Ensuring timely and efficient delivery to your site, every time.",
   },
   {
     image: serviceSupply,
-    alt: "Aerial view of shipping containers stacked at a port terminal",
+    alt: "Construction workers assembling reinforcement steel at a bridge project site",
     title: "Supply Chain Management",
     text: "Tailored procurement solutions for wholesalers and retailers.",
   },
