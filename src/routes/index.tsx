@@ -107,7 +107,7 @@ function Index() {
   const [slide, setSlide] = useState(0);
 
   useEffect(() => {
-    const id = setInterval(() => setSlide((i) => (i + 1) % heroSlides.length), 3000);
+    const id = setInterval(() => setSlide((i) => (i + 1) % heroSlides.length), 6000);
     return () => clearInterval(id);
   }, []);
 
