@@ -117,7 +117,7 @@ function Index() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
           <a
             href="#home"
-            className="rounded-md bg-background px-4 py-2 text-lg font-extrabold tracking-tight text-ink"
+            className="rounded-md bg-background px-4 py-2 text-lg font-extrabold tracking-tight text-foreground"
           >
             Golden Vee
             <span className="ml-1 block text-[9px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
@@ -133,7 +133,7 @@ function Index() {
           </nav>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-md bg-background px-4 py-2 text-xs font-bold uppercase tracking-wide text-ink transition-transform active:scale-[0.98]"
+            className="inline-flex items-center gap-2 rounded-md bg-background px-4 py-2 text-xs font-bold uppercase tracking-wide text-foreground transition-transform active:scale-[0.98]"
           >
             Reach Us <ArrowRight className="size-4" />
           </a>
@@ -156,7 +156,7 @@ function Index() {
               }`}
             />
           ))}
-          <div className="absolute inset-0 -z-10 bg-ink/70" />
+          <div className="absolute inset-0 -z-10 bg-black/70" />
           <div className="mx-auto max-w-6xl px-5 py-28 md:py-40">
             <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-tight text-primary-foreground md:text-6xl">
               Strengthening Nigeria’s Growth Through Dependable Cement Supply
@@ -195,10 +195,10 @@ function Index() {
                 Work With Us <BadgeCheck className="size-4" />
               </a>
             </div>
-            <div className="grid grid-cols-2 border border-border">
+            <div className="grid grid-cols-2 border border-border bg-card">
               {stats.map((s) => (
                 <div key={s.label} className="border border-border p-8 md:p-10">
-                  <p className="text-3xl font-extrabold text-ink md:text-4xl">{s.value}</p>
+                  <p className="text-3xl font-extrabold text-foreground md:text-4xl">{s.value}</p>
                   <p className="mt-4 text-sm text-muted-foreground">{s.label}</p>
                 </div>
               ))}
@@ -210,7 +210,7 @@ function Index() {
           <div className="mx-auto max-w-6xl px-5">
             <p className="text-sm text-muted-foreground">Golden Vee Integrated Services</p>
             <div className="mt-2 flex flex-wrap items-center justify-between gap-6">
-              <h2 className="text-3xl font-extrabold text-ink md:text-4xl">Our Key Offerings</h2>
+              <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">Our Key Offerings</h2>
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 rounded-md bg-sky px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-primary-foreground"
@@ -240,13 +240,13 @@ function Index() {
         </section>
 
         <section className="mx-auto max-w-6xl px-5 py-20">
-          <h2 className="text-center text-3xl font-extrabold text-ink md:text-4xl">
+          <h2 className="text-center text-3xl font-extrabold text-foreground md:text-4xl">
             Here's What Our Customers Say
           </h2>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             {testimonials.map((t) => (
-              <figure key={t.name} className="rounded-md border border-border p-9">
-                <blockquote className="text-base leading-relaxed text-ink">
+              <figure key={t.name} className="rounded-md border border-border bg-card p-9">
+                <blockquote className="text-base leading-relaxed text-foreground">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
                 <figcaption className="mt-6">
@@ -258,7 +258,7 @@ function Index() {
           </div>
         </section>
 
-        <section id="contact" className="bg-ink py-20">
+        <section id="contact" className="bg-card py-20">
           <div className="mx-auto max-w-6xl px-5">
             <h2 className="text-3xl font-extrabold text-primary-foreground md:text-4xl">
               Let's Connect!
