@@ -192,7 +192,8 @@ function Index() {
           <div className="absolute inset-0 -z-10 bg-black/70" />
           <div className="mx-auto max-w-6xl px-5 py-28 md:py-40">
             <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-tight text-primary-foreground md:text-6xl">
-              Strengthening Nigeria’s Growth Through Dependable Cement Supply
+              Strengthening <span className="text-sky">Nigeria&apos;s</span> Growth Through{" "}
+              <span className="text-sky">Dependable</span> Cement Supply
             </h1>
             <p className="mt-6 max-w-xl text-base text-primary-foreground/80">
               Reliable, affordable, and efficient cement distribution solutions designed to meet
