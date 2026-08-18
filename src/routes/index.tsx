@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, BadgeCheck, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, BadgeCheck, Mail, MapPin, Moon, Phone, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import heroSite from "@/assets/hero-site.jpg";
