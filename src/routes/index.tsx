@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, BadgeCheck, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, BadgeCheck, Mail, MapPin, Moon, Phone, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import heroSite from "@/assets/hero-site.jpg";
@@ -103,6 +103,36 @@ const navLinks = [
   { href: "#contact", label: "Contact Us" },
 ];
 
+function ThemeToggle() {
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof document === "undefined") return false;
+    return document.documentElement.classList.contains("dark");
+  });
+
+  const toggleTheme = () => {
+    const next = !isDark;
+    setIsDark(next);
+    if (next) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={toggleTheme}
+      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      className="inline-flex items-center justify-center rounded-md bg-background p-2 text-foreground shadow-sm transition-colors hover:bg-background/80"
+    >
+      {isDark ? <Sun className="size-5" /> : <Moon className="size-5" />}
+    </button>
+  );
+}
+
 function Index() {
   const [slide, setSlide] = useState(0);
 
@@ -131,12 +161,15 @@ function Index() {
               </a>
             ))}
           </nav>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-md bg-background px-4 py-2 text-xs font-bold uppercase tracking-wide text-foreground transition-transform active:scale-[0.98]"
-          >
-            Reach Us <ArrowRight className="size-4" />
-          </a>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 rounded-md bg-background px-4 py-2 text-xs font-bold uppercase tracking-wide text-foreground transition-transform active:scale-[0.98]"
+            >
+              Reach Us <ArrowRight className="size-4" />
+            </a>
+          </div>
         </div>
       </header>
 
@@ -230,7 +263,7 @@ function Index() {
                     className="aspect-[4/3] w-full object-cover"
                   />
                   <div className="p-7">
-                    <h3 className="text-lg font-bold text-ink">{s.title}</h3>
+                    <h3 className="text-lg font-bold text-foreground">{s.title}</h3>
                     <p className="mt-3 text-sm text-muted-foreground">{s.text}</p>
                   </div>
                 </article>
@@ -260,31 +293,31 @@ function Index() {
 
         <section id="contact" className="bg-card py-20">
           <div className="mx-auto max-w-6xl px-5">
-            <h2 className="text-3xl font-extrabold text-primary-foreground md:text-4xl">
+            <h2 className="text-3xl font-extrabold text-card-foreground md:text-4xl">
               Let's Connect!
             </h2>
             <div className="mt-12 grid gap-10 md:grid-cols-3">
               <div>
                 <MapPin className="size-6 text-sky" />
-                <h3 className="mt-4 font-semibold text-primary-foreground">Meet Us</h3>
-                <p className="mt-2 text-sm text-primary-foreground/70">Port Harcourt, Nigeria</p>
+                <h3 className="mt-4 font-semibold text-card-foreground">Meet Us</h3>
+                <p className="mt-2 text-sm text-card-foreground/70">Port Harcourt, Nigeria</p>
               </div>
               <div>
                 <Phone className="size-6 text-sky" />
-                <h3 className="mt-4 font-semibold text-primary-foreground">Call Us</h3>
+                <h3 className="mt-4 font-semibold text-card-foreground">Call Us</h3>
                 <a
                   href="tel:+2347064591361"
-                  className="mt-2 block text-sm text-primary-foreground/70 hover:text-sky"
+                  className="mt-2 block text-sm text-card-foreground/70 hover:text-sky"
                 >
                   +234 706 459 1361
                 </a>
               </div>
               <div>
                 <Mail className="size-6 text-sky" />
-                <h3 className="mt-4 font-semibold text-primary-foreground">Email Us</h3>
+                <h3 className="mt-4 font-semibold text-card-foreground">Email Us</h3>
                 <a
                   href="mailto:chinule13@gmail.com"
-                  className="mt-2 block text-sm text-primary-foreground/70 hover:text-sky"
+                  className="mt-2 block text-sm text-card-foreground/70 hover:text-sky"
                 >
                   chinule13@gmail.com
                 </a>
