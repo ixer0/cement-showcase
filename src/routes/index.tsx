@@ -293,31 +293,31 @@ function Index() {
 
         <section id="contact" className="bg-card py-20">
           <div className="mx-auto max-w-6xl px-5">
-            <h2 className="text-3xl font-extrabold text-primary-foreground md:text-4xl">
+            <h2 className="text-3xl font-extrabold text-card-foreground md:text-4xl">
               Let's Connect!
             </h2>
             <div className="mt-12 grid gap-10 md:grid-cols-3">
               <div>
                 <MapPin className="size-6 text-sky" />
-                <h3 className="mt-4 font-semibold text-primary-foreground">Meet Us</h3>
-                <p className="mt-2 text-sm text-primary-foreground/70">Port Harcourt, Nigeria</p>
+                <h3 className="mt-4 font-semibold text-card-foreground">Meet Us</h3>
+                <p className="mt-2 text-sm text-card-foreground/70">Port Harcourt, Nigeria</p>
               </div>
               <div>
                 <Phone className="size-6 text-sky" />
-                <h3 className="mt-4 font-semibold text-primary-foreground">Call Us</h3>
+                <h3 className="mt-4 font-semibold text-card-foreground">Call Us</h3>
                 <a
                   href="tel:+2347064591361"
-                  className="mt-2 block text-sm text-primary-foreground/70 hover:text-sky"
+                  className="mt-2 block text-sm text-card-foreground/70 hover:text-sky"
                 >
                   +234 706 459 1361
                 </a>
               </div>
               <div>
                 <Mail className="size-6 text-sky" />
-                <h3 className="mt-4 font-semibold text-primary-foreground">Email Us</h3>
+                <h3 className="mt-4 font-semibold text-card-foreground">Email Us</h3>
                 <a
                   href="mailto:chinule13@gmail.com"
-                  className="mt-2 block text-sm text-primary-foreground/70 hover:text-sky"
+                  className="mt-2 block text-sm text-card-foreground/70 hover:text-sky"
                 >
                   chinule13@gmail.com
                 </a>
