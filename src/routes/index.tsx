@@ -103,6 +103,36 @@ const navLinks = [
   { href: "#contact", label: "Contact Us" },
 ];
 
+function ThemeToggle() {
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof document === "undefined") return false;
+    return document.documentElement.classList.contains("dark");
+  });
+
+  const toggleTheme = () => {
+    const next = !isDark;
+    setIsDark(next);
+    if (next) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={toggleTheme}
+      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      className="inline-flex items-center justify-center rounded-md bg-background p-2 text-foreground shadow-sm transition-colors hover:bg-background/80"
+    >
+      {isDark ? <Sun className="size-5" /> : <Moon className="size-5" />}
+    </button>
+  );
+}
+
 function Index() {
   const [slide, setSlide] = useState(0);
 
@@ -131,12 +161,15 @@ function Index() {
               </a>
             ))}
           </nav>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-md bg-background px-4 py-2 text-xs font-bold uppercase tracking-wide text-foreground transition-transform active:scale-[0.98]"
-          >
-            Reach Us <ArrowRight className="size-4" />
-          </a>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 rounded-md bg-background px-4 py-2 text-xs font-bold uppercase tracking-wide text-foreground transition-transform active:scale-[0.98]"
+            >
+              Reach Us <ArrowRight className="size-4" />
+            </a>
+          </div>
         </div>
       </header>
 
