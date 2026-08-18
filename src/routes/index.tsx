@@ -263,7 +263,7 @@ function Index() {
                     className="aspect-[4/3] w-full object-cover"
                   />
                   <div className="p-7">
-                    <h3 className="text-lg font-bold text-ink">{s.title}</h3>
+                    <h3 className="text-lg font-bold text-foreground">{s.title}</h3>
                     <p className="mt-3 text-sm text-muted-foreground">{s.text}</p>
                   </div>
                 </article>
