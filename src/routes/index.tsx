@@ -3,11 +3,11 @@ import { ArrowRight, BadgeCheck, Mail, MapPin, Moon, Phone, Sun } from "lucide-r
 import { useEffect, useState } from "react";
 
 import heroSite from "@/assets/hero-site.jpg";
-import heroCementBagsAsset from "@/assets/hero-cement-bags.jpg";
-import heroScaffoldAsset from "@/assets/hero-scaffold.jpg";
-import serviceBulkAsset from "@/assets/service-bulk.jpg";
-import serviceLogisticsAsset from "@/assets/service-logistics.jpg";
-import serviceSupplyAsset from "@/assets/service-supply.jpg";
+import heroCementBagsAsset from "@/assets/hero-cement-bags.jpg.asset.json";
+import heroScaffoldAsset from "@/assets/hero-scaffold.jpg.asset.json";
+import serviceBulkAsset from "@/assets/service-bulk.jpg.asset.json";
+import serviceLogisticsAsset from "@/assets/service-logistics.jpg.asset.json";
+import serviceSupplyAsset from "@/assets/service-supply.jpg.asset.json";
 
 const serviceBulk = serviceBulkAsset.url;
 const serviceLogistics = serviceLogisticsAsset.url;
