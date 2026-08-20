@@ -305,6 +305,7 @@ function Index() {
                 <MapPin className="size-6 text-sky" />
                 <h3 className="mt-4 font-semibold text-card-foreground">Meet Us</h3>
                 <p className="mt-2 text-sm text-card-foreground/70">Port Harcourt, Nigeria</p>
+                <p className="text-sm text-card-foreground/70">Omoku, Onelga</p>
               </div>
               <div>
                 <Phone className="size-6 text-sky" />
