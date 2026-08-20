@@ -316,6 +316,12 @@ function Index() {
                 >
                   +234 706 459 1361
                 </a>
+                <a
+                  href="tel:+2349128144235"
+                  className="block text-sm text-card-foreground/70 hover:text-sky"
+                >
+                  +234 912 814 4235
+                </a>
               </div>
               <div>
                 <Mail className="size-6 text-sky" />
