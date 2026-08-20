@@ -300,7 +300,7 @@ function Index() {
             <h2 className="text-3xl font-extrabold text-card-foreground md:text-4xl">
               Let's Connect!
             </h2>
-            <div className="mt-12 grid gap-10 md:grid-cols-3">
+            <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
               <div>
                 <MapPin className="size-6 text-sky" />
                 <h3 className="mt-4 font-semibold text-card-foreground">Meet Us</h3>
@@ -326,7 +326,20 @@ function Index() {
                   chinule13@gmail.com
                 </a>
               </div>
+              <div>
+                <WhatsAppIcon className="size-6 text-sky" />
+                <h3 className="mt-4 font-semibold text-card-foreground">WhatsApp Us</h3>
+                <a
+                  href="https://wa.me/2347064591361"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 block text-sm text-card-foreground/70 hover:text-sky"
+                >
+                  +234 706 459 1361
+                </a>
+              </div>
             </div>
+
           </div>
         </section>
       </main>
