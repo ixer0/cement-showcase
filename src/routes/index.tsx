@@ -60,7 +60,7 @@ const stats = [
 const services = [
   {
     image: serviceBulk,
-    alt: "Pallets of cement bags stacked in a warehouse with a supervisor in safety gear",
+    alt: "Pallets of Lafarge Portland Supaset cement bags stacked in a warehouse with a safety supervisor in the background",
     title: "Bulk Cement Distribution",
     text: "Supplying premium cement in bulk volumes to sites nationwide.",
   },
